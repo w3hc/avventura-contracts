@@ -1,12 +1,13 @@
-# W3HC Hardhat Template
+# Avventura contracts
 
-This Hardhat template includes:
+Solidity contracts for Avventura, the Web3 social RPG. 
 
--   [Typescript](https://www.typescriptlang.org/)
--   [Ethers v6](https://docs.ethers.org/v6/)
--   [OpenZeppelin Contracts v5.0.1](https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v5.0.1)
--   [Hardhat Verify plugin](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify)
--   [Hardhat Deploy plugin](https://github.com/wighawag/hardhat-deploy)
+-   Live demo: https://avventura.fun
+-   API: https://avventura.jcloud-ver-jpe.ik-server.com/api
+-   API repo: https://github.com/strat-web3/avventura
+-   UI: https://github.com/w3hc/avventura-ui
+
+First deployment to OP Mainnet: https://optimistic.etherscan.io/address/0x595ab9ace017d77960eeae61d29b3d44bcf53f17
 
 ## Supported networks
 
@@ -48,18 +49,6 @@ You can check the current signer wallet balance:
 pnpm bal <NETWORK_NAME>
 ```
 
-## Mint
-
-```
-pnpm mint:<NETWORK_NAME> 42
-```
-
-## Send
-
-```
-pnpm send:<NETWORK_NAME> 8
-```
-
 ## Versions
 
 -   Node [v20.9.0](https://nodejs.org/uk/blog/release/v20.9.0/)
@@ -70,4 +59,4 @@ pnpm send:<NETWORK_NAME> 8
 
 ## Support
 
-You can contact me via [Element](https://matrix.to/#/@julienbrg:matrix.org), [Telegram](https://t.me/julienbrg), [Twitter](https://twitter.com/julienbrg), [Discord](https://discordapp.com/users/julienbrg), or [LinkedIn](https://www.linkedin.com/in/julienberanger/).
+You can contact me via [Element](https://matrix.to/#/@julienbrg:matrix.org), [Farcaster](https://warpcast.com/julien-), [Telegram](https://t.me/julienbrg), [Twitter](https://twitter.com/julienbrg), [Discord](https://discordapp.com/users/julienbrg), or [LinkedIn](https://www.linkedin.com/in/julienberanger/).

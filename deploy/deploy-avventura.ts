@@ -3,8 +3,6 @@ import color from "cli-color"
 var msg = color.xterm(39).bgXterm(128)
 import hre, { ethers, network } from "hardhat"
 
-const initialMint = ethers.parseEther("10000")
-
 export default async ({ getNamedAccounts, deployments }: any) => {
     const { deploy } = deployments
 
@@ -15,9 +13,9 @@ export default async ({ getNamedAccounts, deployments }: any) => {
     const { deployer } = await getNamedAccounts()
     console.log("deployer:", deployer)
 
-    const basic = await deploy("Basic", {
+    const avventura = await deploy("Avventura", {
         from: deployer,
-        args: [initialMint],
+        args: [],
         log: true
     })
 
@@ -25,15 +23,15 @@ export default async ({ getNamedAccounts, deployments }: any) => {
         case "sepolia":
             try {
                 console.log(
-                    "Basic ERC-20 token contract deployed:",
-                    msg(basic.receipt.contractAddress)
+                    "Avventura contract deployed:",
+                    msg(avventura.address)
                 )
                 console.log("\nEtherscan verification in progress...")
                 await wait(90 * 1000)
                 await hre.run("verify:verify", {
                     network: network.name,
-                    address: basic.receipt.contractAddress,
-                    constructorArguments: [initialMint]
+                    address: avventura.address,
+                    constructorArguments: []
                 })
                 console.log("Etherscan verification done. ✅")
             } catch (error) {
@@ -44,15 +42,15 @@ export default async ({ getNamedAccounts, deployments }: any) => {
         case "optimism":
             try {
                 console.log(
-                    "Basic ERC-20 token contract deployed:",
-                    msg(basic.receipt.contractAddress)
+                    "Avventura contract deployed:",
+                    msg(avventura.address)
                 )
                 console.log("\nEtherscan verification in progress...")
                 await wait(20 * 1000)
                 await hre.run("verify:verify", {
                     network: network.name,
-                    address: basic.receipt.contractAddress,
-                    constructorArguments: [initialMint]
+                    address: avventura.address,
+                    constructorArguments: []
                 })
                 console.log("Etherscan verification done. ✅")
             } catch (error) {
@@ -63,15 +61,15 @@ export default async ({ getNamedAccounts, deployments }: any) => {
         case "op-sepolia":
             try {
                 console.log(
-                    "Basic ERC-20 token contract deployed:",
-                    msg(basic.receipt.contractAddress)
+                    "Avventura contract deployed:",
+                    msg(avventura.address)
                 )
                 console.log("\nEtherscan verification in progress...")
                 await wait(90 * 1000)
                 await hre.run("verify:verify", {
                     network: network.name,
-                    address: basic.receipt.contractAddress,
-                    constructorArguments: [initialMint]
+                    address: avventura.address,
+                    constructorArguments: []
                 })
                 console.log("Etherscan verification done. ✅")
             } catch (error) {
@@ -80,4 +78,4 @@ export default async ({ getNamedAccounts, deployments }: any) => {
             break
     }
 }
-export const tags = ["Basic"]
+export const tags = ["Avventura"]
