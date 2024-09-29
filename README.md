@@ -2,10 +2,29 @@
 
 Solidity contracts for Avventura, the Web3 social RPG. 
 
--   Live demo: https://avventura.fun
+## Avventura features 
+
+- Blockchain Integration: Every player's move is [seamlessly recorded on OP Mainnet](https://optimistic.etherscan.io/address/0x595ab9ace017d77960eeae61d29b3d44bcf53f17)
+- Creative Freedom: Create and edit your own adventures or explore tales crafted by others
+- Versatility: Perfect for both entertainment and educational contexts
+- Brand Engagement: A new frontier for interactive marketing and audience connection
+- Educational Potential: Craft immersive, interactive learning experiences
+- Community-Driven: Explore a growing library of user-created adventures
+
+Planned: 
+
+- AI-Enhanced Editing: Planned Claude (Sonnet 3.5) integration to assist story creators
+- Adaptive Storytelling: Stories that can flex and grow based on player choices
+
+Avventura isn't just for gamers - it's an exciting new frontier for storytellers, educators, creators, and brands to engage audiences through interactive narratives, offering endless possibilities in the world of Web3 gaming.
+
+### Links 
+
+-   Live demo: **https://avventura.fun**
+-   UI repo: https://github.com/w3hc/avventura-ui
 -   API: https://avventura.jcloud-ver-jpe.ik-server.com/api
--   API repo: https://github.com/strat-web3/avventura
--   UI: https://github.com/w3hc/avventura-ui
+
+### First deployment
 
 First deployment to OP Mainnet: https://optimistic.etherscan.io/address/0x595ab9ace017d77960eeae61d29b3d44bcf53f17
 
